@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "description": "a really cool app",
+  "version": "1.0.0",
+  "engines": {
+    "node": "12.11.1",
+    "npm":  "6.14.8"
+    },
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently -k \"npm run server\" \"npm run client\"",
+    "start": "node server.js"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.32.0",
+    "concurrently": "^7.4.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.6.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+ 
+}
